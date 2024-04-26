@@ -8,14 +8,21 @@
 </head>
 <body>
     
-    <header> 
+    <header class="header"> 
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="cayetano" alt="CAYETANO">
+        </div>
         
-            <nav>
-                <ul>
-                   <a href="../pages/home.html"><li>HOME</li></a>
-                   <a href="./pages/nosotros.html"><li>NOSOTROS</li></a>
-                   <a href="./pages/productos.html"><li>PRODUCTOS</li></a>
-                   <a href="./pages/contacto.html"><li>CONTACTO</li></a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="../index.html">INICIO</a></li>
+               <li class="header__nav-item"><a href="./pages/home.html">HOME</a></li>
+               <li class="header__nav-item"><a href="./pages/nosotros.html">NOSOTROS</a></li>
+               <li class="header__nav-item"><a href="./pages/productos.html">PRDUCTOS</a></li>
+               <li class="header__nav-item"><a href="./pages/contacto.html">CONTACTO</a></li>
+               
                 </ul>
     
     
