@@ -8,18 +8,20 @@
 </head>
 <body>
     <header class="header"> 
-        <input type="checkbox" class="header-checkbox" id="open-menu">
-        <label for="open-menu" class="header-open-nav-button" role="button">=</label>
-        <div class="header-logo-container">
-            <img class="header-logo" src="cayetano">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="cayetano" alt="CAYETANO">
         </div>
         
-        <nav class="header-nav">
-            <ul class="header-nav-list">
-               <li class="header-nav-item"><a href="./pages/home.html">HOME</a></li>
-               <li class="header-nav-item"><a href="./pages/nosotros.html">NOSOTROS</a></li>
-               <li class="header-nav-item"><a href="./pages/productos.html">PRDUCTOS</a></li>
-               <li class="header-nav-item"><a href="./pages/contacto.html">CONTACTO</a></li>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="./index.html">INICIO</a></li>
+               <li class="header__nav-item"><a href="./pages/home.html">HOME</a></li>
+               <li class="header__nav-item"><a href="./pages/nosotros.html">NOSOTROS</a></li>
+               <li class="header__nav-item"><a href="./pages/productos.html">PRODUCTOS</a></li>
+               <li class="header__nav-item"><a href="./pages/contacto.html">CONTACTO</a></li>
                
             </ul>
         </nav>
@@ -37,14 +39,14 @@
 
         </section>
         <section class="porfile">
-            <div class="porfile-wrapper">
-            <div class="porfile-img-container">
-                <img src="./img/banner-los-muertos-crew-8279641.jpg" class="porfile-img">
+            <div class="porfile__wrapper">
+            <div class="porfile__img-container">
+                <img src="./img/banner-los-muertos-crew-8279641.jpg" class="porfile__img">
             </div>
-            <div class="porfile-data-container">
-            <div class="porfile-data">
-            <div class="porfile-descripcion">
-            <h3>NUESTRO MENU</h3>
+            <div class="porfile__data-container">
+            <div class="porfile__data">
+            <div class="porfile__descripcion">
+            <h3>NOSOTROS</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nostrum nam. Accusantium, animi? Rem maxime et voluptatem ex, beatae iste dolore eius numquam voluptate quasi dolor provident reprehenderit, animi unde.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellendus dolorum architecto at amet, similique tempore itaque maxime corporis a blanditiis ducimus debitis fugit. Minima nesciunt assumenda accusamus. Mollitia, eligendi.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vitae recusandae consequuntur qui itaque, necessitatibus assumenda fuga corporis facere totam magni aspernatur amet quisquam illo quae, exercitationem adipisci ipsam! Inventore!</p>
@@ -54,25 +56,25 @@
 
         </section>
         <section class="portafolio">
-            <h3 class="portafolio-titulo">PORTAFOLIO SECCION</h3>
-            <div class="portafolio-proyecto-container">
-                <div class="portafolio-proyect">
-                    <h3 class="portafolio-proyecto-name">PROYECTO</h3>
+            <h3 class="portafolio__titulo">PORTAFOLIO SECCION</h3>
+            <div class="portafolio__proyecto-container">
+                <div class="portafolio__proyect">
+                    <h3 class="portafolio__proyecto-name">EMPANADAS</h3>
                 </div>
-                <div class="portafolio-proyect">
-                    <h3 class="portafolio-proyecto-name">PROYECTO</h3>
+                <div class="portafolio__proyect">
+                    <h3 class="portafolio__proyecto-name">TARTAS</h3>
                 </div>
-                <div class="portafolio-proyect">
-                    <h3 class="portafolio-proyecto-name">PROYECTO</h3>
+                <div class="portafolio__proyect">
+                    <h3 class="portafolio__proyecto-name">PIZZAS</h3>
                 </div>
-                <div class="portafolio-proyect">
-                    <h3 class="portafolio-proyecto-name">PROYECTO</h3>
+                <div class="portafolio__proyect">
+                    <h3 class="portafolio__proyecto-name">LOCRO</h3>
                 </div>
-                <div class="portafolio-proyect">
-                    <h3 class="portafolio-proyecto-name">PROYECTO</h3>
+                <div class="portafolio__proyect">
+                    <h3 class="portafolio__proyecto-name">LINEA INTEGRAL</h3>
                 </div>
-                <div class="portafolio-proyect">
-                    <h3 class="portafolio-proyecto-name">PROYECTO</h3>
+                <div class="portafolio__proyect">
+                    <h3 class="portafolio__proyecto-name">CONGELADAS</h3>
                 </div>
 
             </div>
@@ -87,9 +89,32 @@
     
     
     <footer>
-
-
-
+        <footer class="pie-pagina">
+        <div class="grupo-uno">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="imagen" alt="logo">
+                        </a>
+                    </figure>
+                
+                </div>
+            <div class="box">
+                <h2>INFORMACION</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit est similique minima ex commodi quos excepturi nostrum? Ab placeat sit mollitia. Et fugiat iusto maiores magni eligendi suscipit ab porro.</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo sed omnis totam est. Blanditiis deleniti ipsum dignissimos? Dolores molestiae aspernatur obcaecati ipsam at, optio dolorem ducimus incidunt minima illum!</P>
+            </div>
+            <div class="box">
+                <h2>SEGUINOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-wattsap"></a>
+                </div>
+            </div>
+        </div>
+        </footer>
+       
     </footer>
 
    
