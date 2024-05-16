@@ -1,0 +1,452 @@
+
+
+/*----SECCION-UNO----*/
+main img{
+    width: 300px;
+    height: 300px;
+}
+.tarjeta-banner{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/banner-principal-crew-8279643.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.promo-banner{
+    font-size: 60px;
+    text-align: center;
+}
+
+.promo-parrafo{
+    font-size: 60px;
+   text-align: center;
+}
+
+/*----SECCION-DOS----*/
+.porfile {
+    container-name: porfile;
+    container-type: inline-size;
+}
+.porfile__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    max-width: 1400px;
+}
+.porfile__img-container{
+    max-height: 500px;
+    overflow: hidden;
+}
+.porfile__img{
+    max-width: 100%;
+    width: 600px;
+}
+.porfile__data-container{
+    max-width: 600px;
+    padding: 20px;
+}
+h3{
+    color: #48e;
+}
+
+/*----SECCION-TRES----*/
+.portafolio {
+    background-color: #18233f;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portafolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+
+}
+.portafolio__titulo{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.portafolio__proyecto-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 80vh;
+}
+.portafolio__proyect {
+    background-image:  linear-gradient(#0009,#0009),url(../img/horno-los-muertos-crew-8279711.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+}
+.portafolio__proyect:hover {
+    opacity: 0.74;
+    outline: 2px solid #fff6;
+}
+
+
+
+/*------NOSOTROS-----*/
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading-title{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+
+.heading-title::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+
+.heading-parrafo{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10 px 20px;
+}
+
+.about{
+   @include flex(flex, space-between, center, wrap)
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.container-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.container-img:hover {
+    transform: scale(1.2);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-title{
+    font-size: 23px;
+    margin-bottom: 15px;
+   
+    color: #333;
+}
+
+.about-parrafo{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+.read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.read-more:hover{
+    background-color: #3e8e41;
+}
+
+/*-----CONTACTO------*/
+.form{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+}
+.form-form{
+    
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    background-color: #18233f33;
+    padding: 30px;
+    border-radius: 12px;
+}
+.form-input-container :is(input,textarea){
+    width: 100%;
+    padding: 9px ;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 2px 2px 4px #003;
+}
+.form-input-container textarea{
+    resize: none;
+    min-height: 120px;
+    font-family: inherit;
+}
+.form-input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #48e;
+    color: #fff;
+}
+.form-titulo{
+    font-size: 2.4rem;
+}
+
+/*-------PRODUCTOS-------*/
+.menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+
+.heading-pro{
+    background-color: #e2eaff;
+    color: #333;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading-tit{
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.heading-titdos{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: .2s ease-in-out;
+}
+
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+
+
+}
+
+.heading-tit{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price{
+    text-align: right;
+}
+
+.details>p{
+    color: #666;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+.details>button{
+    background-color: #e2eaff;
+    border: none;
+    color: #18233f;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.details>button:hover{
+    background-color: #3e8e41;
+}
+
+
+
+
+
+/*------- BLOG------*/
+
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.content-blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.post-img-1{
+    background: url(../img/pizzas.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2{
+    background: url(../img/tartas.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3{
+    background: url(../img/trigo.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0,0,0,.1);
+    overflow: hidden;
+    transition: .2s;
+ }
+
+ .post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0,0,0,.15);
+ }
+
+ .post-blog{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+ }
+ .post:hover .post-img-1,
+ .post:hover .post-img-2,
+ .post:hover .post-img-3{
+    transform: scale(1.1);
+ }
+
+ .post-body{
+    padding: 15px;
+    text-align: center;
+  }
+  .post-span{
+    display: inline-block;
+    color: $colores, 4;
+  }
+
+  .post-h{
+    margin-bottom: 15px;
+  }
+
+  .post-p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #3e8e41;
+    color: #e2eaff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0,0,0,.1);
+    transition: .2s;
+  }
+
+  .post-body .post-link:hover{
+    background: #3e8e41;
+    box-shadow: 1px 2px 6px 1px rgba(0,0,0,.2);
+    transform: translateY(-2px);
+  }
+
+  
+
+
+
+
+
+
+
+
+
+

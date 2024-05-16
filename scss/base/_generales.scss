@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
+    font-family: sans-serif;
     background-color: #e2eaff;
     color: #101632dd;
-    
     
 }
 div, ul, nav, li, header, footer, a, label, body{
@@ -15,14 +15,28 @@ div, ul, nav, li, header, footer, a, label, body{
     padding: 0px;
 
 }
+@keyframes header-movement {
+    from{
+        padding: 20px 0;
+        background-color: #fff;
+    }
+    to{
+        padding: 20px 0;
+        background-color: #0006;
+    }
+}
+
+
 
 /*------VARIABLES------*/
-$color-principal:#48e;
-$color-secundario:#fff;
-$colot-terciario:black;
+$color-principal: #fff;
+$color-secundario: #48e;
+$color-terciario:#4caf50;
+$color-cuarto:#18233f;
+$colot-quinto:black;
 
 /*--------listas-------*/
-$colores: #48e, #fff, black, #18233f, #e2eaff,#4caf50;
+$colores: #48e, #fff, black, #18233f, #e2eaff,#4caf50; 
 
 $font-size:
 12px,
@@ -33,29 +47,48 @@ $font-size:
  // + - * /
 
  $ancho:720px;
- img{
 
- }
+ 
 
- /*-----MAPAS--------*/
+    /*-----MAPAS--------*/
 
  $boton:(
-    bg-boton:#fff,
-    bg-boton:2px solid #48e,
-    color-text:black,
 
  );
- .boton{
-    background-color: map-get($boton, bg-boton);
- }
-
- /*---------EXTENS------*/
+ 
+    /*---------EXTENS------*/
 
  //%PLACEGOLDER
  %flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 
  }
+
+
+    /*-----MIXINS------*/
+ 
+ @mixin flex($flex, $justify, $aling, $wrap){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-wrap: $wrap;
+ }
+
+    /*-----CONDICIONAL------*/
+ // OPERADORES DE COMPARACION
+ // =ASIGNACION
+ // ==ES IGUAL
+ // === ESTRICTAMENTE IGUAL
+ //!= ES DIFERENTE
+ //> MAYOR QUE
+ //< MENOR QUE
+ //>= MAYOR O IGUAL
+ //<= MENOR O IGUAL
+
+
+    /*-----BUCLE-----*/
+ 
  
